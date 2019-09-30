@@ -4,7 +4,7 @@ WhatsFlutter is an application that recreates the famous WhatsApp messaging appl
 
 ## Getting Started  
   
-``
+```
 $ flutter packages get
 $ flutter run
-``
+```
