@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:whatsflutter/screen/call/call.dart';
 import 'package:whatsflutter/screen/camera/camera.dart';
-import 'package:whatsflutter/screen/conversation/conversation.dart';
+import 'package:whatsflutter/screen/conversation/listConversations/conversation.dart';
 import 'package:whatsflutter/screen/status/status.dart';
 import 'package:whatsflutter/static/colors.dart';
 
