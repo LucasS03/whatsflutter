@@ -73,11 +73,45 @@ class _HomeState extends State<Home> {
               ),
               tabScreen(
                 MediaQuery.of(context).size.width*0.29,
-                Tab(text: "CONVERSAS")
+                Tab(
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: <Widget>[
+                      Text("CONVERSAS "),
+                      Container(
+                        padding: EdgeInsets.all(5.0),
+                        decoration: BoxDecoration(
+                          shape: BoxShape.circle,
+                          color: Colors.white
+                        ),
+                        child: Text(
+                          "1",
+                          style: Theme.of(context).textTheme.caption.merge(
+                            TextStyle(color: CustomColors.green1, fontWeight: FontWeight.bold)
+                          ),
+                        ),
+                      )
+                    ],
+                  ),
+                )
               ),
               tabScreen(
                 MediaQuery.of(context).size.width*0.29,
-                Tab(text: "STATUS")
+                Tab(
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: <Widget>[
+                      Text("STATUS "),
+                      Container(
+                        padding: EdgeInsets.all(4.0),
+                        decoration: BoxDecoration(
+                          shape: BoxShape.circle,
+                          color: Colors.white
+                        )
+                      )
+                    ],
+                  ),
+                )
               ),
               tabScreen(
                 MediaQuery.of(context).size.width*0.29,

@@ -1,13 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:whatsflutter/static/colors.dart';
 
-class ModelConversation extends StatelessWidget {
-
+class ModelContactStatus extends StatelessWidget {
   final String name;
-  final String text;
-  final String hour;
-  final bool viewed;
-  ModelConversation(this.name, this.text, this.hour, this.viewed);
+  final String past;
+
+  ModelContactStatus(this.name, this.past);
 
   @override
   Widget build(BuildContext context) {
@@ -50,13 +48,6 @@ class ModelConversation extends StatelessWidget {
                               fontSize: 16,
                               fontWeight: FontWeight.bold
                             ),
-                          ),
-                          Text(
-                            this.hour,
-                            style: TextStyle(
-                              fontSize: 12,
-                              color: Colors.grey[600]
-                            ),
                           )
                         ],
                       ),
@@ -70,15 +61,9 @@ class ModelConversation extends StatelessWidget {
                               mainAxisAlignment: MainAxisAlignment.start,
                               crossAxisAlignment: CrossAxisAlignment.center,
                               children: <Widget>[
-                                Icon(
-                                  this.viewed ? Icons.done_all : Icons.done,
-                                  color: Colors.grey[600],
-                                  size: 20,
-                                ),
-                                SizedBox(width: 3.0,),
                                 Flexible(
                                   child: Text(
-                                    this.text,
+                                    this.past,
                                     softWrap: false,
                                     maxLines: 1,
                                     overflow: TextOverflow.ellipsis,
@@ -89,25 +74,6 @@ class ModelConversation extends StatelessWidget {
                                   ),
                                 )
                               ],
-                            ),
-                          ),
-                          Icon(
-                            Icons.volume_off,
-                            color: Colors.grey[600],
-                            size: 20
-                          ),
-                          Container(
-                            margin: EdgeInsets.only(left: 5.0),
-                            padding: EdgeInsets.all(5.0),
-                            decoration: BoxDecoration(
-                              shape: BoxShape.circle,
-                              color: CustomColors.green3
-                            ),
-                            child: Text(
-                              "1",
-                              style: Theme.of(context).textTheme.caption.merge(
-                                TextStyle(color: Colors.white, fontWeight: FontWeight.bold)
-                              ),
                             ),
                           )
                         ],
