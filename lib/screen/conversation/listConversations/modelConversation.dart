@@ -26,11 +26,11 @@ class ModelConversation extends StatelessWidget {
                 CircleAvatar(
                   minRadius: 27,
                   backgroundColor: CustomColors.yellow1,
-                  child: Icon(
-                    Icons.person, 
-                    size: 40, 
-                    color: Colors.white
-                  ),
+                  child: Image.asset(
+                    "assets/images/person.png", 
+                    height: 50, 
+                    width: 50
+                  )
                 ),
                 SizedBox(width: 10,),
 
